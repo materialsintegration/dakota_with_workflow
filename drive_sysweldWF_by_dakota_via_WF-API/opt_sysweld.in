@@ -1,0 +1,57 @@
+environment,
+	graphics
+    tabular_graphics_data
+       tabular_graphics_file = 'tabulargraphics.dat'
+
+# method, coliny_ea
+
+method, conmin_frcg 
+     id_method ="frcg" 
+     max_iterations = 10000
+     convergence_tolerance=1e-7
+
+#method, conmin_mfd 
+#    id_method ="mfd" 
+#    max_iterations = 10000
+#    convergence_tolerance=1e-7
+
+
+# method,coliny_ea
+#     max_iterations = 100
+#     max_function_evaluations = 2000
+#     seed = 11011011
+#     population_size = 50
+#     fitness_type merit_function
+#     mutation_type offset_normal
+#     mutation_rate 1.0
+#     crossover_type two_point
+#     crossover_rate 0.0
+#     replacement_type chc = 10
+
+
+variables,
+	continuous_design = 2
+	  initial_point =  4.17     0.500
+	  lower_bounds  =  3.753    0.450
+	  upper_bounds  =  4.587    0.550
+	  descriptor    =  'Weld_End_Time' 'Energy'
+      cdv_scale_type  'auto' 
+      cdv_scales 1
+
+
+interface,
+	 system #asynch evaluation_concurrency = 5
+	  analysis_driver = 'simulator_script.sh'
+	  parameters_file = 'params.in'
+	  results_file = 'results.out'
+	  dprepro
+
+
+responses,
+	objective_functions = 1
+	numerical_gradients
+	  method_source dakota
+	  interval_type central
+	  fd_step_size = .01
+	no_hessians
+
