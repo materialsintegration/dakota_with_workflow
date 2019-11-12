@@ -101,7 +101,7 @@ port = 粒径情報_01(file)
 port = 結果ファイル_01(file)
 ```
 ※ カッコの中は必須ポートであるかどうかを示す。必須ポートは省略できない。  
-※　詳細な使用方法は[ワークフロー時効ヘルパープログラム群](https://github.com/materialsintegration/workflow_python_lib)を参照のこと。
+※詳細な使用方法は[ワークフロー実行ヘルパープログラム群](https://github.com/materialsintegration/workflow_python_lib)を参照のこと。
 
 ### ワークフローを実行するMIntシステムのURL
 ワークフローIDのところで説明したパラメータにある、「misystem:dev-u-tokyo.mintsys.jp」がそれである。
