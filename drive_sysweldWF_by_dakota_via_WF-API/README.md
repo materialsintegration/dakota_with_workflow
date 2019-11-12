@@ -67,6 +67,7 @@ python3.6 ~/assets/modules/workflow_python_lib/workflow_execute.py  workflow_id:
 ワークフローは入力パラメータとしてポート名を用意してある。ワークフローの実行はこのポート名に与えるパラメータを記述したファイルを指定することで行われる。
 ワークフローIDのところで説明したものがWF-APIを利用してワークフローを実行するスクリプトであるが、ここに例えば、「クランプ開始時間_01:Clamping_Initial_Time.dat」とあるものが、ポート名に対するパラメータファイルの指定の方法である。
 このポート名は以下のスクリプトを利用することで得ることができる。
+
 ```
 $ python3.6 ~/assets/modules/workflow_python_lib/workflow_params.py workflow_id:W000020000000219 token:{あなたのAPIトークン} misystem:dev-u-tokyo.mintsys.jp
 input parameters
@@ -99,7 +100,8 @@ port = 硬さ分布画像_01(file)
 port = 粒径情報_01(file)
 port = 結果ファイル_01(file)
 ```
-カッコの中は必須ポートであるかどうかを示す。必須ポートは省略できない。
+※ カッコの中は必須ポートであるかどうかを示す。必須ポートは省略できない。  
+※　詳細な使用方法は[ワークフロー時効ヘルパープログラム群](https://github.com/materialsintegration/workflow_python_lib)を参照のこと。
 
 ### ワークフローを実行するMIntシステムのURL
 ワークフローIDのところで説明したパラメータにある、「misystem:dev-u-tokyo.mintsys.jp」がそれである。
