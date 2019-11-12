@@ -19,7 +19,22 @@ dakotaを使って、SYSWELDを実行するWFをWF-API経由で実行し、最�
   Dakotaのパラメータ内、vaiablesに指定する変数ファイル作成テンプレートファイル。
 * template.Welding_End_Time.in  
   Dakotaのパラメータ内、vaiablesに指定する変数ファイル作成テンプレートファイル。
-
+* その他のdatファイル。固定されたSYSWELD実行用パラメータ。 
+  ```
+  Amient_Temp.dat
+  Clamping_End_Time.dat
+  Clamping_Initial_Time.dat
+  Cooling_End_Time.dat
+  Cooling_Initial_Time.dat
+  Efficiency.dat
+  Initial_Temperature.dat
+  Length.dat
+  Penetration.dat
+  Velocity.dat
+  Welding_Initial_Time.dat
+  Width.dat
+  ```
+  
 ## 準備と説明
 これらのスクリプトを利用して、最適化を行うためには、以下のパラメータをあらかじめ決めておく必要がある。
 * 入熱量の初期値、最小値、最大値
