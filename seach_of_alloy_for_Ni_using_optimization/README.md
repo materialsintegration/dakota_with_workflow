@@ -2,7 +2,7 @@
 最適化を用いたNi合金の探索を行うためのスクリプト
 
 ## 概要
-詳細は[Wiki]()を参照のこと。
+詳細は[Wiki](https://github.com/materialsintegration/optimization_by_sipmi/wiki/3D積層造形プロセスにおいてき裂発生を抑制可能なNi合金組成の探索)を参照のこと。
 
 ## 内容
 
